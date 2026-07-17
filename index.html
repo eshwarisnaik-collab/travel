@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Route&Roar — India & Beyond</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><i class="fa-solid fa-plane-departure"></i></span>
+      <span class="brand-text">Route&Roar</em></span>
+    </a>
+    <nav class="navlinks" id="navlinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#india">India</a>
+      <a href="#international">International</a>
+      <a href="#contact">Plan a Trip</a>
+      <a href="about.html" class="doc-link">About Project</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO / SPLIT-FLAP DEPARTURE BOARD ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">GATE OPEN &middot; NOW BOARDING</p>
+    <h1 class="hero-title">Two countries.<br>One boarding pass.</h1>
+    <div class="flap-board" id="flapBoard" aria-live="polite">
+      <div class="flap-row">
+        <span class="flap-label">DESTINATION</span>
+        <span class="flap-word" id="flapWord">GOA</span>
+      </div>
+    </div>
+    <p class="hero-sub">Search, compare and shortlist trips across India and the world — then check in when you're ready.</p>
+    <div class="hero-actions">
+      <a href="#india" class="btn btn-primary">Explore India</a>
+      <a href="#international" class="btn btn-ghost">Explore the World</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SEARCH / FILTER STRIP ===== -->
+<section class="search-strip">
+  <div class="search-inner">
+    <div class="search-field">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="searchInput" placeholder="Search a destination — e.g. Kerala, Tokyo, Ladakh...">
+    </div>
+    <div class="filter-pills" id="filterPills">
+      <button class="pill active" data-filter="all">All</button>
+      <button class="pill" data-filter="india">India</button>
+      <button class="pill" data-filter="international">International</button>
+      <button class="pill" data-filter="beach">Beach</button>
+      <button class="pill" data-filter="mountain">Mountain</button>
+      <button class="pill" data-filter="heritage">Heritage</button>
+      <button class="pill" data-filter="city">City</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-copy reveal">
+      <span class="section-code">ABOUT US</span>
+      <h2>One board for every trip you're weighing</h2>
+      <p>Waypoint was built for travellers who plan two kinds of trips in the same year — a weekend back home and three weeks somewhere new. Instead of switching between tabs and apps, every destination lives on one board: route code, duration and best season, stamped and ready to compare.</p>
+      <p>We don't sell bookings. We help you shortlist faster, then hand you off to plan the details with confidence.</p>
+    </div>
+    <div class="about-cards">
+      <div class="about-card reveal">
+        <i class="fa-solid fa-earth-asia"></i>
+        <h3>India + International</h3>
+        <p>Domestic and international destinations sit side by side, so you're never choosing blind.</p>
+      </div>
+      <div class="about-card reveal">
+        <i class="fa-solid fa-ticket"></i>
+        <h3>Boarding-pass format</h3>
+        <p>Every destination carries a route code, duration and best season — scannable at a glance.</p>
+      </div>
+      <div class="about-card reveal">
+        <i class="fa-solid fa-user-check"></i>
+        <h3>Human follow-up</h3>
+        <p>Send a trip request and a real itinerary comes back within 48 hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INDIA SECTION ===== -->
+<section class="destinations" id="india">
+  <div class="section-head">
+    <span class="section-code">IND</span>
+    <h2>Explore Bharat</h2>
+    <p>From Himalayan passes to backwater villages — boarding passes for the India leg of your journey.</p>
+  </div>
+  <div class="card-grid" id="indiaGrid"></div>
+</section>
+
+<!-- ===== INTERNATIONAL SECTION ===== -->
+<section class="destinations alt" id="international">
+  <div class="section-head">
+    <span class="section-code">INTL</span>
+    <h2>Go Global</h2>
+    <p>Passport-ready picks from across the globe, each one boarded and stamped for your next getaway.</p>
+  </div>
+  <div class="card-grid" id="intlGrid"></div>
+</section>
+
+<div id="noResults" class="no-results hidden">
+  <i class="fa-solid fa-compass"></i>
+  <p>No destinations match your search. Try another city, or clear the filters.</p>
+</div>
+
+<!-- ===== STATS / WHY US ===== -->
+<section class="stats">
+  <div class="stat"><span class="stat-num" data-count="120">0</span><span class="stat-label">Destinations curated</span></div>
+  <div class="stat"><span class="stat-num" data-count="28">0</span><span class="stat-label">Indian states covered</span></div>
+  <div class="stat"><span class="stat-num" data-count="45">0</span><span class="stat-label">Countries listed</span></div>
+  <div class="stat"><span class="stat-num" data-count="9500">0</span><span class="stat-label">Travellers boarded</span></div>
+</section>
+
+<!-- ===== TESTIMONIAL / TICKET STUB ===== -->
+<section class="ticket-stub">
+  <div class="stub-card">
+    <div class="stub-left">
+      <i class="fa-solid fa-quote-left"></i>
+      <p>"Planned my Rishikesh-to-Reykjavik year using nothing but this site's boarding-pass shortlist. Ridiculously easy to compare."</p>
+      <span class="stub-name">— Ananya R., frequent flyer</span>
+    </div>
+    <div class="stub-right">
+      <span class="stub-code">BOARDING PASS</span>
+      <span class="stub-barcode" aria-hidden="true"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT / TRIP REQUEST FORM ===== -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-copy">
+      <span class="section-code">CHECK-IN</span>
+      <h2>Tell us where you're headed</h2>
+      <p>Share a few details and our team will put together a shortlist — India, international, or both.</p>
+      <ul class="contact-points">
+        <li><i class="fa-solid fa-check"></i> Custom itineraries within 48 hours</li>
+        <li><i class="fa-solid fa-check"></i> Budget &amp; luxury options side by side</li>
+        <li><i class="fa-solid fa-check"></i> Visa &amp; document checklists included</li>
+      </ul>
+    </div>
+    <form class="trip-form" id="tripForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Your name">
+          <span class="error-msg" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+          <span class="error-msg" id="emailError"></span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="destination">Preferred destination</label>
+          <input type="text" id="destination" name="destination" placeholder="e.g. Manali or Santorini">
+          <span class="error-msg" id="destinationError"></span>
+        </div>
+        <div class="form-group">
+          <label for="travelType">Trip type</label>
+          <select id="travelType" name="travelType">
+            <option value="india">Domestic — India</option>
+            <option value="international">International</option>
+            <option value="both">Both</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Anything else we should know?</label>
+        <textarea id="message" name="message" rows="4" placeholder="Dates, budget, number of travellers..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-wide">
+        <i class="fa-solid fa-ticket"></i> Request itinerary
+      </button>
+      <p class="form-success hidden" id="formSuccess"><i class="fa-solid fa-circle-check"></i> Boarding pass sent — check your inbox!</p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark"><i class="fa-solid fa-plane-departure"></i></span>
+      <span class="brand-text">Way<em>point</em></span>
+      <p>India, and everywhere after.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#india">India</a>
+      <a href="#international">International</a>
+      <a href="#contact">Plan a Trip</a>
+      <a href="about.html">About Project</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+  <p class="footer-bottom">&copy; 2026 Waypoint. Built for the Frontend Web Development Competition.</p>
+</footer>
+
+<div class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></div>
+
+<script src="script.js"></script>
+</body>
+</html>

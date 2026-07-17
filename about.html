@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Project — Route&Roar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><i class="fa-solid fa-plane-departure"></i></span>
+      <span class="brand-text">Way<em>point</em></span>
+    </a>
+    <nav class="navlinks" id="navlinks">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#india">India</a>
+      <a href="index.html#international">International</a>
+      <a href="index.html#contact">Plan a Trip</a>
+      <a href="about.html" class="doc-link">About Project</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== DOC HERO ===== -->
+<section class="doc-hero">
+  <p class="eyebrow">PROJECT DOCUMENTATION</p>
+  <h1>Behind the Boarding Pass</h1>
+  <p>Everything about how Waypoint was planned, built and deployed for the Frontend Web Development Competition 2026.</p>
+</section>
+
+<div class="doc-wrap">
+
+  <!-- 1. PROJECT OVERVIEW -->
+  <section class="doc-section reveal">
+    <div class="doc-kicker">01 · PROJECT OVERVIEW</div>
+    <h2>Project Overview</h2>
+    <div class="doc-grid-2">
+      <div class="info-card">
+        <span class="tag">TITLE</span>
+        <h3>Waypoint — India & Beyond</h3>
+        <p>A responsive travel discovery website covering both domestic (India) and international destinations.</p>
+      </div>
+      <div class="info-card">
+        <span class="tag">CATEGORY</span>
+        <h3>Travel / Tourism Website</h3>
+        <p>Destination showcase with search, filters and a trip-request form.</p>
+      </div>
+      <div class="info-card">
+        <span class="tag">PROBLEM STATEMENT</span>
+        <h3>Fragmented travel research</h3>
+        <p>Travellers usually juggle separate sites for domestic and international trip planning. There was no single, visual, easy-to-browse place to compare both side by side.</p>
+      </div>
+      <div class="info-card">
+        <span class="tag">WHY THIS PROJECT</span>
+        <h3>Real-world relevance</h3>
+        <p>Travel is a category where design, imagery and interactivity genuinely improve decision-making — making it an ideal way to practise responsive layouts, JavaScript filtering, animation and form handling on a problem people actually face.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. PROJECT DESCRIPTION -->
+  <section class="doc-section reveal">
+    <div class="doc-kicker">02 · PROJECT DESCRIPTION</div>
+    <h2>Project Description</h2>
+    <p>Waypoint is a fully responsive travel website built with HTML5, CSS3 and vanilla JavaScript. The site's purpose is to give travellers a single, visually engaging place to explore curated destinations across India and around the world, compare them at a glance, and submit a trip request without leaving the page.</p>
+    <p>The target users are young, mobile-first Indian travellers who plan both domestic getaways and international holidays and want a quick, browsable shortlist before committing to a booking platform. Every destination is presented as a "boarding pass" card carrying route code, duration and best-time-to-visit information, which ties the visual language directly to the travel theme.</p>
+    <p>Key features include a live search bar, category and region filters (India / International / Beach / Mountain / Heritage / City), an animated departure-board hero section, scroll-triggered reveal animations, animated statistics counters, and a validated trip-request form that stores the visitor's last submission in the browser's local storage for convenience. The site is built mobile-first and tested across phone, tablet and desktop breakpoints.</p>
+    <p>Future improvements under consideration include user accounts, live pricing via a travel API, an admin dashboard for adding destinations, and integrated online payments for booking.</p>
+  </section>
+
+  <!-- 3. TECHNOLOGY STACK -->
+  <section class="doc-section reveal">
+    <div class="doc-kicker">03 · TECHNOLOGY STACK</div>
+    <h2>Technology Stack</h2>
+    <div class="stack-groups">
+      <div>
+        <h3>CORE</h3>
+        <ul>
+          <li>HTML5 — semantic page structure</li>
+          <li>CSS3 — Grid, Flexbox, custom properties, animations</li>
+          <li>JavaScript (ES6) — DOM manipulation, filtering, form logic</li>
+        </ul>
+      </div>
+      <div>
+        <h3>EXTERNAL RESOURCES</h3>
+        <ul>
+          <li>Google Fonts — DM Serif Display, Inter, Space Mono</li>
+          <li>Font Awesome — icon set</li>
+          <li>Unsplash — destination photography</li>
+        </ul>
+      </div>
+      <div>
+        <h3>DEPLOYMENT</h3>
+        <ul>
+          <li>GitHub — version control &amp; repository hosting</li>
+          <li>Vercel — live deployment</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="doc-section reveal">
+    <div class="doc-kicker">FEATURES</div>
+    <h2>What the Site Includes</h2>
+    <ul class="feature-checklist">
+      <li><i class="fa-solid fa-check"></i> Responsive design</li>
+      <li><i class="fa-solid fa-check"></i> Interactive navigation</li>
+      <li><i class="fa-solid fa-check"></i> Animated hero section</li>
+      <li><i class="fa-solid fa-check"></i> Destination cards (India + Intl)</li>
+      <li><i class="fa-solid fa-check"></i> Live search functionality</li>
+      <li><i class="fa-solid fa-check"></i> Category &amp; region filters</li>
+      <li><i class="fa-solid fa-check"></i> Trip-request contact form</li>
+      <li><i class="fa-solid fa-check"></i> Client-side form validation</li>
+      <li><i class="fa-solid fa-check"></i> Smooth scrolling</li>
+      <li><i class="fa-solid fa-check"></i> Scroll-reveal animations</li>
+      <li><i class="fa-solid fa-check"></i> Mobile-friendly layout</li>
+      <li><i class="fa-solid fa-check"></i> Local storage (form pre-fill)</li>
+    </ul>
+  </section>
+
+  <!-- 4. TEAM INFORMATION -->
+  <section class="doc-section reveal">
+    <div class="doc-kicker">04 · TEAM INFORMATION</div>
+    <h2>Team Details</h2>
+    <table class="team-table">
+      <thead>
+        <tr><th>Full Name</th><th>Roll No.</th><th>Department</th><th>Year</th><th>Email </th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Ankitha N</td><td>1SP23EC005</td><td>ECE</td><td>4th Year</td><td>ankithanachar2020@gmail.com</td></tr>
+        <tr><td>Eshwari Naik</td><td>1SP23EC013</td><td>ECE</td><td>4th Year</td><td>eshwarisnaik@gmail.com</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 5. TEAM CONTRIBUTION -->
+  <section class="doc-section reveal">
+    <div class="doc-kicker">05 · TEAM CONTRIBUTION</div>
+    <h2>Team Contribution</h2>
+    <div class="contribution-grid">
+      <div class="contribution-card">
+        <h3>Ankitha N</h3>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Homepage design &amp; layout</li>
+          <li><i class="fa-solid fa-check"></i> Navigation bar</li>
+          <li><i class="fa-solid fa-check"></i> CSS styling &amp; theming</li>
+           <li><i class="fa-solid fa-check"></i> Responsive design &amp; testing</li>
+        </ul>
+      </div>
+      <div class="contribution-card">
+        <h3>Eshwari Naik</h3>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> JavaScript functionality (search &amp; filters)</li>
+          <li><i class="fa-solid fa-check"></i> Form validation</li>
+          <li><i class="fa-solid fa-check"></i> Interactive animations</li>
+          <li><i class="fa-solid fa-check"></i> GitHub repository management</li>
+          <li><i class="fa-solid fa-check"></i> Vercel deployment</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CHALLENGES FACED -->
+  <section class="doc-section reveal">
+    <div class="doc-kicker">06 · CHALLENGES FACED</div>
+    <h2>Challenges Faced</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>Cross-device responsiveness</h4>
+        <p>Getting the boarding-pass cards and departure-board hero to hold their layout from mobile to desktop required extensive breakpoint testing and CSS Grid adjustments.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Filtering logic</h4>
+        <p>Combining region filters, category filters and live search without conflicts took a few iterations of the JavaScript filtering function.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Form validation UX</h4>
+        <p>Balancing clear error messages with a clean form design was solved by adding inline, field-level validation instead of a single alert.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Deployment</h4>
+        <p>Initial GitHub-to-Vercel deployment issues were resolved by double-checking file paths and repository structure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. LEARNING OUTCOMES -->
+  <section class="doc-section reveal">
+    <div class="doc-kicker">07 · LEARNING OUTCOMES</div>
+    <h2>Learning Outcomes</h2>
+    <div class="outcome-tags">
+      <span>Responsive Design</span>
+      <span>CSS Grid &amp; Flexbox</span>
+      <span>Media Queries</span>
+      <span>DOM Manipulation</span>
+      <span>Event Handling</span>
+      <span>Form Validation</span>
+      <span>Local Storage</span>
+      <span>Git &amp; GitHub</span>
+      <span>Deployment via Vercel</span>
+      <span>Team Collaboration</span>
+    </div>
+  </section>
+
+  <!-- 8. FEEDBACK -->
+  <section class="doc-section reveal">
+    <div class="doc-kicker">08 · TRAINING FEEDBACK</div>
+    <h2>Feedback on Frontend Web Development Training</h2>
+    <div class="feedback-box">
+      <p>The Frontend Web Development Training gave us a strong, practical foundation in HTML, CSS and JavaScript. The hands-on sessions and real-world examples made it easy to understand how to structure a website, style it responsively, and add interactivity. Building this project end-to-end — from layout to deployment — was the most valuable part of the training, since it forced us to apply every concept together instead of in isolation.</p>
+      <p style="margin-top:12px;">We appreciated the guidance on Git/GitHub workflow and Vercel deployment, which are skills we hadn't used before. One suggestion for improvement would be a few more sessions dedicated to debugging responsive layout issues, as that was where our team spent the most time. Overall, it was a rewarding, confidence-building experience.</p>
+    </div>
+  </section>
+
+  <!-- 9. SCREENSHOTS -->
+  <section class="doc-section reveal">
+    <div class="doc-kicker">09 · PROJECT SCREENSHOTS</div>
+    <h2>Screenshots</h2>
+    <div class="screenshot-grid">
+     <div><span>Home </span><img src="images\home.png" alt="profile Image"></div>
+      <div><span>About </span><img src="images\about.png" alt="profile Image"></div>
+      <div><span>Contact</span><img src="images\contact.png" alt="profile Image"></div>
+    <div><span>Mobile View </span><img src="images\mobile.png" alt="profile Image"></div>
+    </div>
+  </section>
+
+  <!-- 10. LINKS -->
+  <section class="doc-section reveal">
+    <div class="doc-kicker">10 · GITHUB &amp; DEPLOYMENT</div>
+    <h2>Repository &amp; Live Site</h2>
+    <div class="link-buttons">
+      <div class="link-card">
+        <i class="fa-brands fa-github"></i>
+        <div><span>REPOSITORY</span><a href="https://github.com/username/waypoint" target="_blank" rel="noopener">github.com/username/waypoint</a></div>
+      </div>
+      <div class="link-card">
+        <i class="fa-solid fa-globe"></i>
+        <div><span>LIVE SITE</span><a href="https://waypoint.vercel.app" target="_blank" rel="noopener">waypoint.vercel.app</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DECLARATION -->
+  <section class="doc-section reveal">
+    <div class="doc-kicker">DECLARATION</div>
+    <div class="declaration-box">
+      <p>We hereby declare that this project was developed by our team specifically for the <strong>Frontend Web Development Competition 2026</strong>. The work submitted is original, and we have not copied any complete project or template from online sources. External resources used (fonts, icons, images) have been credited above.</p>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark"><i class="fa-solid fa-plane-departure"></i></span>
+      <span class="brand-text">Way<em>point</em></span>
+      <p>India, and everywhere after.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#india">India</a>
+      <a href="index.html#international">International</a>
+      <a href="index.html#contact">Plan a Trip</a>
+      <a href="about.html">About Project</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+  <p class="footer-bottom">&copy; 2026 Waypoint. Built for the Frontend Web Development Competition.</p>
+</footer>
+
+<div class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></div>
+
+<script src="script.js"></script>
+</body>
+</html>
